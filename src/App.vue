@@ -9,28 +9,29 @@
       <v-list dense>
         <v-list-tile @click="">
           <v-list-tile-action>
-            <v-icon>dashboard</v-icon>
+            <i class="fas fa-archway"></i>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>Dashboard</v-list-tile-title>
+            <v-list-tile-title>메뉴1</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
         <v-list-tile @click="">
           <v-list-tile-action>
-            <v-icon>settings</v-icon>
+            <i class="fas fa-archway"></i>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>Settings</v-list-tile-title>
+            <v-list-tile-title>메뉴2</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
     <v-toolbar app fixed clipped-left>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-      <v-toolbar-title>Application</v-toolbar-title>
+      <v-toolbar-title>Vue 프로그램 연습</v-toolbar-title>
     </v-toolbar>
     <v-content>
-      <v-container fluid fill-height>
+      <Test/>
+      <!-- <v-container fluid fill-height>
         <v-layout justify-center align-center>
           <v-flex shrink>
             <v-tooltip right>
@@ -53,16 +54,20 @@
             </v-tooltip>
           </v-flex>
         </v-layout>
-      </v-container>
+      </v-container> -->
     </v-content>
     <v-footer app fixed>
-      <span>&copy; 2017</span>
+      <span>&copy; 2018 / 12 / 09</span>
     </v-footer>
   </v-app>
 </template>
 
 <script>
+  import Test from './cpnt/test/Test'
   export default {
+    components: {
+      Test
+    },
     data: () => ({
       drawer: null
     }),
