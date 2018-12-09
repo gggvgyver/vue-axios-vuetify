@@ -1,5 +1,5 @@
 <template>
-  <v-app id="inspire" white>
+  <v-app id="inspire" dark>
     <v-navigation-drawer
       v-model="drawer"
       clipped
